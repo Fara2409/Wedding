@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+
+  <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
+  <!-- font awesome cdn link  -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+  <!-- custom css link -->
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header class="header">
+
+  <audio id="bg-music" loop>
+    <source src="music/whispering-echoes-20240527-094810.mp3" type="audio/mpeg">
+  </audio>
+
+  <button id="music-toggle" title="Müziği Aç/Kapat">
+    <img class='pause_icon_visible' id="icon_pause" src="images/pause-icon.png" alt="pause">
+    <img class='play_icon_invisible' id="icon_play" src="images/play-icon.png" alt="pause">
+  </button>
+
+  <div class="icons">
+    <div data-aos="zoom-in-left" data-aos-delay="1350" class="fas fa-moon" id="theme-btn"></div>
+    <div data-aos="zoom-in-left" data-aos-delay="1500" class="fas fa-bars" id="menu"></div>
+    <a data-aos="zoom-in-left" data-aos-delay="1350" id='Ru' href="index.html"><img src="./images/ikon-tr.png" alt="tr language " length ='40px' width="40px" title="Tr"></a>
+  </div>
+
+</header>
+
+<section class="home" id="home">
+
+  <div class="falling-roses"></div>
+
+  <div class="content" data-aos="fade-down">
+    <h3>Елис <img src="images/wedding-rings.png"> Рамиль</h3>
+    <p>Уважаемые гости</p>
+    <p>Приглашаем &nbsp вас &nbsp на &nbsp нашу &nbsp свадьбу</p>
+    <img src="images/marriage.png" alt="">
+  </div>
+
+</section>
+
+<section class="gallery" id="gallery">
+
+  <h1 class="heading"> <span>Счастливые моменты</span><img src="images/couple.png"></h1>
+
+  <div class="swiper gallery-slider" data-aos="fade-up">
+    <div class="swiper-wrapper">
+      <div class="swiper-slide"><img src="./images/na%20nogax.jpg" alt=""></div>
+      <div class="swiper-slide"><img src="./images/elis%20sidit.jpg" alt=""></div>
+      <div class="swiper-slide"><img src="./images/soldat.jpg" alt=""></div>
+      <div class="swiper-slide"><img src="./images/swag.jpg" alt=""></div>
+    </div>
+  </div>
+
+</section>
+
+<section class="team" id="team">
+
+  <h1 class="heading">Родители<img src="images/family.png"></h1>
+
+  <div class="box-container" data-aos="fade-up">
+
+    <div class="box">
+      <img src="images/roditeli%20Elis.jpg" alt="">
+      <h3>Анна ханым & Эмрах бэй</h3>
+      <p>Мама & Папа невесты</p>
+    </div>
+
+    <div class="box">
+      <img src="images/roditeli%20Ramila.jpg" alt="">
+      <h3>Индира ханым & Фатих бэй</h3>
+      <p>Мама & Папа жениха</p>
+    </div>
+
+  </div>
+</section>
+
+<section class="about" id="about">
+
+  <h1 class="heading"> <span></span> О свадьбе<img src="images/hall.png"></h1>
+
+  <div class="row">
+    <div class="content" data-aos="fade-up" data-aos-delay="150">
+      <h3>Адрес и дата церемонии 💒</h3>
+      <p>Денизли/Памуккале 🏙️</p>
+      <p>26/07/2025 18.00 🕕</p>
+      <p>Gala Event Garden Vip Salonu 💍</p>
+      <p>Нам будет приятно видеть вас с нами в этот особенный день 🤗</p>
+      <p>Мы подготовили карту Google для вашего удобства 📍🗺️</p>
+    </div>
+
+    <div class="image" data-aos="fade-down" data-aos-delay="300">
+      <!-- Google Maps Embed -->
+      <div style="width: 100%; height: 300px;">
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3150.6250344478235!2d29.13950171159226!3d37.8456632079562!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x14c717056ac40fcd%3A0xfbc6a9abfeb1857!2sGala%20Event%20Garden!5e0!3m2!1sru!2str!4v1746619699567!5m2!1sru!2str" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+      </div>
+    </div>
+
+    <div class="calendar-widget" data-aos="fade-down" data-aos-delay="300">
+
+      <!-- Турецкий календарь -->
+      <div id="calendar-tr">
+        <h3>📅 26 Temmuz 2025</h3>
+        <table class="calendar-table">
+          <thead>
+          <tr>
+            <th>Pzt</th><th>Sal</th><th>Çar</th><th>Per</th><th>Cum</th><th>Cmt</th><th>Paz</th>
+          </tr>
+          </thead>
+          <tbody>
+          <tr><td></td><td>1</td><td>2</td><td>3</td><td>4</td><td>5</td><td>6</td></tr>
+          <tr><td>7</td><td>8</td><td>9</td><td>10</td><td>11</td><td>12</td><td>13</td></tr>
+          <tr><td>14</td><td>15</td><td>16</td><td>17</td><td>18</td><td>19</td><td>20</td></tr>
+          <tr><td>21</td><td>22</td><td>23</td><td>24</td><td>25</td><td class="highlight">26</td><td>27</td></tr>
+          <tr><td>28</td><td>29</td><td>30</td><td>31</td><td></td><td></td><td></td></tr>
+          </tbody>
+        </table>
+      </div>
+
+      <!-- Русский календарь -->
+      <div id="calendar-ru">
+        <h3>📅 26 Июля 2025</h3>
+        <table class="calendar-table">
+          <thead>
+          <tr>
+            <th>Пон</th><th>Вт</th><th>Ср</th><th>Чет</th><th>Пт</th><th>Суб</th><th>Вос</th>
+          </tr>
+          </thead>
+          <tbody>
+          <tr><td></td><td>1</td><td>2</td><td>3</td><td>4</td><td>5</td><td>6</td></tr>
+          <tr><td>7</td><td>8</td><td>9</td><td>10</td><td>11</td><td>12</td><td>13</td></tr>
+          <tr><td>14</td><td>15</td><td>16</td><td>17</td><td>18</td><td>19</td><td>20</td></tr>
+          <tr><td>21</td><td>22</td><td>23</td><td>24</td><td>25</td><td class="highlight">26</td><td>27</td></tr>
+          <tr><td>28</td><td>29</td><td>30</td><td>31</td><td></td><td></td><td></td></tr>
+          </tbody>
+        </table>
+      </div>
+
+    </div>
+
+    <div class="countdown">
+      <h2>До свадьбы 💍</h2>
+      <div id="countdown"></div>
+    </div>
+
+  </div>
+
+</section>
+
+
+<section class="contact" id="contact">
+
+  <h1 class="heading"> <span>Приглашение</span><img src="images/wedding-invitation.png"></h1>
+
+  <section class="rsvp" data-aos="fade-down" data-aos-delay="300">
+    <h3>Подтвердите свое присутствие</h3>
+    <form id="rsvp-form" action="https://formspree.io/f/xrbqpqwn" method="POST">
+      <input type="text" name="name" placeholder="Ваше имя" required />
+      <input type="text" name="name" placeholder="Ваша фамилия" required />
+      <select name="attendance" required>
+        <option value="">Планируете прийти?</option>
+        <option value="yes">Да, с радостью!</option>
+        <option value="no">К сожалению, нет.</option>
+      </select>
+      <textarea name="message" placeholder="Сообщение (по желанию)"></textarea>
+      <button type="submit">Отправить</button>
+    </form>
+    <p id="form-message" class="hidden">Спасибо! Ваш ответ отправлен.</p>
+  </section>
+
+</section>
+
+<div id="start-button">
+  Нажмите, чтобы открыть сайт 🌺
+</div>
+
+
+<script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+
+<script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+<script src="script.js"></script>
+
+</body>
+</html>
